@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+h1 {
+  color: rgb(39, 154, 225);
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* 4 tiles per row */
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #116ee0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.tile:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+#surpriseMessage {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ff4500;
+}
